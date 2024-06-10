@@ -29,14 +29,14 @@ html {
   padding: 0;
 }
 .container > div > h1 {
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 4rem);
   border: 1px solid white;
   border-radius: 15px;
   margin: 0px;
   padding: 5%;
 }
 .container > div > h4 {
-  font-size:clamp(0.4rem, 2vw, 0.8rem);
+  font-size:clamp(0.4rem, 2vw, 1.6rem);
   font-weight: 200;
 }
 #input {
@@ -81,3 +81,24 @@ html {
 .button:active {
   scale: 0.9;
 }
+@media screen and (max-width: 600px) {
+  .container>div {
+    transform: scale(1.8);
+    transform-origin: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .container > div {
+    transform: scale(1.4);
+    transform-origin: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container > div {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
+
+
