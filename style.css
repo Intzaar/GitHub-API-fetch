@@ -53,34 +53,33 @@ html {
 #input:focus {
   outline: none;
 }
-#submit {
-  position: relative;
-  width: 90%;
+
+.button {
+  width: 70%;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 1vw;
+  text-decoration: none;
   height: clamp(0.8rem, 4vw, 1.6rem);
   font-family: "Exo 2", sans-serif;
   font-size:clamp(0.4rem, 2vw, 0.8rem);
-  background: none;
-  text-align: center;
-  color: white;
-
-}
-.button {
-  background-color: transparent;
-  border: 1px solid white;
-  font-size: 1rem;
-  font-family: "Exo 2", sans-serif;
-  cursor: pointer;
-  color: white;
-  border-radius: 5px;
+  color: #fff;
+  background-color: #284449;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px #999;
 }
 
-.button:hover {
-  background-color: white !important;
-  color: black !important;
-}
+.button:hover {background-color: #3e8e41}
+
 .button:active {
-  scale: 0.9;
+  background-color: #405153;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
 }
+
 @media screen and (max-width: 600px) {
   .container>div {
     transform: scale(1.8);
