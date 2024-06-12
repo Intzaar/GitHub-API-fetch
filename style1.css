@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-size: larger;
+  font-size:larger;
   font-family: "Exo 2", sans-serif;
   background: linear-gradient(to bottom right, #284449, black);
   color: white;
@@ -11,6 +11,7 @@ html {
 
 .container {
   height: 100%;
+
   position: relative;
   display: flex;
   justify-content: center;
@@ -19,7 +20,8 @@ html {
 }
 h1{
   text-transform: uppercase;
-  font-weight: 300;
+  font-size:clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
   text-align: center;
   font-style: italic;
 }
@@ -31,23 +33,27 @@ img{
   box-shadow: 1vw 1vw #284449;
   margin: 0px;
 }
+.contents{
+  font-size:clamp(larger, 1vw, larger);
+}
 
 .container1{
+  
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .button {
-  width: 20%;
+  display: flex;
+  width: clamp(10rem, 25vw, 20rem);
+  font-size:clamp(1rem, 2vw, 2rem);
+  height: clamp(1.5rem, 4vw, 3rem);
   display: inline-block;
-  font-size: 16px;
   cursor: pointer;
   justify-self: center;
   text-align: center;
   text-decoration: none;
-  height: clamp(0.8rem, 4vw, 1.6rem);
   font-family: "Exo 2", sans-serif;
-  font-size:clamp(0.4rem, 2vw, 0.8rem);
   color: #fff;
   background-color: #284449;
   border: none;

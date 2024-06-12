@@ -16,7 +16,7 @@ if (username) {
                         <div id="pfp">
                             <a href="${data.html_url}" target="_blank"><img src="${data.avatar_url}" alt="${data.login}"></a>
                         </div>
-                        <div class="content">
+                        <div class="contents">
                             <p class="info"><strong>Name : </strong> ${data.name}</p>
                             <p class="info"><strong>Username : </strong> ${data.login}</p>
                             <p class="info"><strong>Followers : </strong> ${data.followers}</p>
