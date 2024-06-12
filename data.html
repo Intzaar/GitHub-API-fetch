@@ -10,17 +10,10 @@
     <title>GitHub Module-2</title>
 </head>
 <body>
-    <div id="result">
+    <div class="container1">
+        <div id="result">
+        </div>
     </div>
-    <script>
-        // Retrieve the username from localStorage and display it
-        const username = localStorage.getItem('githubUsername');
-        const result = document.getElementById('result');
-        if(username) {
-            result.innerHTML = `<h1>HELLO ${username}</h1>`;
-        } else {
-            result.innerHTML = `<h1>No username found</h1>`;
-        }
-    </script>
+    <script src="fetch.js"></script>
 </body>
 </html>
