@@ -33,6 +33,4 @@ if (username) {
             console.error("Error", error);
             result.innerHTML = "<p>Facing error while fetching data </p>";
         });
-} else {
-    result.innerHTML = `<h1>No username found</h1>`;
 }

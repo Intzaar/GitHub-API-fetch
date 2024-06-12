@@ -7,7 +7,17 @@ function fetchdata() {
     const username = document.getElementById("username").value;
     if (username) {
         localStorage.setItem("githubUsername", username);
-        window.location.href = "data.html";
+        
+        fetch(`https://api.github.com/users/${username}`)
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.message && data.message === "Not Found") {
+                alert("No User Found");
+            }    
+            else{
+                window.location.href = "data.html";
+            }   
+        })
         
     } else {
         alert("Please enter a username");
