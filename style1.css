@@ -1,0 +1,10 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: larger;
+  font-family: "Exo 2", sans-serif;
+  background: linear-gradient(to bottom right, #284449, black);
+  color: white;
+  scale: 1;
+}

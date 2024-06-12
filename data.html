@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>GitHub Module-2</title>
+</head>
+<body>
+    <div id="result">
+    </div>
+    <script>
+        // Retrieve the username from localStorage and display it
+        const username = localStorage.getItem('githubUsername');
+        const result = document.getElementById('result');
+        if(username) {
+            result.innerHTML = `<h1>HELLO ${username}</h1>`;
+        } else {
+            result.innerHTML = `<h1>No username found</h1>`;
+        }
+    </script>
+</body>
+</html>

@@ -39,7 +39,7 @@ html {
   font-size:clamp(0.4rem, 2vw, 1.6rem);
   font-weight: 200;
 }
-#input {
+#username {
   width: 90%;
   height: clamp(0.8rem, 4vw, 1.6rem);
   margin-bottom: clamp(0rem, 1vw, 0.8rem);
@@ -50,7 +50,7 @@ html {
   border-radius: 5px;
 
 }
-#input:focus {
+#username:focus {
   outline: none;
 }
 
@@ -60,7 +60,6 @@ html {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  padding-top: 1vw;
   text-decoration: none;
   height: clamp(0.8rem, 4vw, 1.6rem);
   font-family: "Exo 2", sans-serif;
