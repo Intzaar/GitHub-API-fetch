@@ -19,8 +19,9 @@ html {
 }
 h1{
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
+  font-style: italic;
 }
 img{
   width: 40%;
@@ -29,5 +30,36 @@ img{
   padding: 1vw;
   box-shadow: 1vw 1vw #284449;
   margin: 0px;
+}
+
+.container1{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.button {
+  width: 20%;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  justify-self: center;
+  text-align: center;
+  text-decoration: none;
+  height: clamp(0.8rem, 4vw, 1.6rem);
+  font-family: "Exo 2", sans-serif;
+  font-size:clamp(0.4rem, 2vw, 0.8rem);
+  color: #fff;
+  background-color: #284449;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #405153;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
 }
 
